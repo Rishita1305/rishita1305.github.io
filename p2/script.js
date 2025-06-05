@@ -16,7 +16,7 @@ const showRegister = () => {
     <div class='Register-Container'>
     <h1>Register Form</h1>
     <p><input type="text" id="txtName"></p>
-     <p><input type="text" id="txtEmail"></p>
+    <p><input type="text" id="txtEmail"></p>
     <p><input type="password" id="txtPass"></p>
     <button>Register</button>
     `
