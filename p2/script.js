@@ -19,7 +19,8 @@ const showRegister = () => {
     <p><input type="text" id="txtEmail"></p>
     <p><input type="password" id="txtPass"></p>
     <button>Register</button>
-    <p><button onclick='ShowLogin()'>Already have an account</button></p>
+    <p><button onclick='showLogin()'>Already have an account</button></p>
+
     </div>
     `
     root.innerHTML = str
