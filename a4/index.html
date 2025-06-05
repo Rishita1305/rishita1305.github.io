@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <input type="text" id="a" >
+    <input type="text" id="b" >
+    <button onclick="calc()" style="background-color: hotpink;">Click</button>
+  <div id="resAdd"></div>
+ <div id="resSub"></div>
+  <div id="resMul"></div>
+      <div id="resDiv"></div>
+    <script>
+        const calc = () => {
+            const a = Number(document.getElementById("a").value);
+            const b = Number(document.getElementById("b").value);
+
+        const add = (a, b) => {
+            return a + b;
+        };
+         let res1 = add(a, b);
+       
+
+        const sub = (a, b) => {
+            return a - b;
+        };
+           let res2 = sub(a, b);
+           
+
+        const mult = (a, b) => {
+            return a * b;
+        };
+        let res3 = mult(a, b);
+        
+
+         const div = (a,b) => {
+            return a/b;
+         };
+         let res4 = div(a,b);
+     
+
+            document.getElementById("resAdd").innerHTML = "Addition: " + res1;
+            document.getElementById("resSub").innerHTML = "Subtraction: " + res2;
+            document.getElementById("resMul").innerHTML = "Multiplication: " + res3;
+            document.getElementById("resDiv").innerHTML = "Division: " + res4;
+        };
+    </script>
+
+</body>
+</html>
