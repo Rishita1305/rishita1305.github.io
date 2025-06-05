@@ -17,10 +17,9 @@
         dvResult.innerHTML = a+b;
     }
     function calcMul(){
-       let a = Number(t3.value)
-        let b = Number(t4.value)
-        //alert(a+b); //This will give a pop up 
-        dvMul.innerHTML = a*b;
+       let a = Number(t1.value)
+        let b = Number(t2.value)
+        dvResult.innerHTML = a*b;
     }
   </script>
   <input type = "name" id = "txtName">
@@ -30,12 +29,10 @@
     <input type = "text" id = "t2">
     
     <button onclick = "calcadd()" style = "background-color:hotpink;">Addition</button>
+    <button onclick = "calcMul()" style = "background-color:hotpink;">Multiplication</button>
   <div id="dvResult"></div>
-  <br>
-  <input type = "text" id="t3">
-<input type = "text" id="t4">
-<button onclick = "calcMul()" style = "background-color:hotpink;">Multiplication</button>
- <div id="dvMul"></div>
+  <br> 
+ 
 
 
 
