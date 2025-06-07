@@ -24,6 +24,20 @@
         fruits.push(input);
         dispFruits()
       }
+      function ser(value){
+        fruits = fruits.filter((e) => e == value);
+        searchFruits()
+      }
+      function searchFruits() {
+        let listHTML = fruits
+          .map(
+            (fruit) =>
+              `<li>${fruit}<button onclick=ser('${fruit}')>Search</button></li>`
+          )
+          .join("");
+        document.getElementById("fruitList").innerHTML = listHTML;
+      }
+
     </script>
   </head>
   <body>
@@ -31,6 +45,7 @@
       <h1>Fruit List</h1>
       <input type="text" id="txt1" />
       <button onclick="add()">Add</button>
+      <button onclick = "ser()">Search</button>
       <ul id="fruitList"></ul>
     </div>
   </body>
